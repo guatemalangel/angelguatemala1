@@ -1,0 +1,220 @@
+* {
+    background-color: #FFFAF8;
+    font-family: sans-serif;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  body{
+    margin: 2em;
+    padding: 1em;
+  }
+  
+  div {
+    padding: 1em;
+  }
+  
+  #home {
+    display: flex;
+    align-items: flex-end;
+    gap: 10%;
+  }
+  
+  #pronouns {
+    font-weight: thin;
+    font-size: .5em;
+  }
+  
+  #home h1 {
+      font-weight: bold;
+      font-size: 4EM;
+      position: sticky;
+      
+  }
+  
+  #about h1,
+  #work h1,
+  #contact h1 {
+      display: none;
+  }
+  
+  nav ul {
+      position: fixed;
+      top: 0;
+      left: 0;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      padding: 1em;
+      z-index: 1;
+  }
+  
+  nav li {
+    margin-right: 3em;
+  }
+  
+  nav a {
+      text-decoration: none; 
+      color: black;
+      padding: 10px 10px; 
+  }
+  
+  nav a:hover,
+  nav a.active {
+      font-weight: bold;
+  }
+  
+  h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+  }
+  
+  p {
+    font-size: 1.5em;
+  }
+  
+  /* About*/
+  #about {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    padding-top: 2em;
+  }
+  
+  .amgboots{
+    min-width: 200px;
+  }
+  
+  /* Work */
+  #work h2{
+    padding-top: 2em;
+  }
+  
+  #work {
+    position: relative;
+  }
+  
+  .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      justify-content: space-evenly;
+      gap: .5em;
+      max-width: 100px auto;
+      margin: 5em auto;
+      align-items: center;
+      padding
+  }
+  
+  .grid-item {
+      max-width: 50% auto;
+  }
+  
+  .grid-item img {
+      width: 90%;
+      height: 100%;
+  }
+  
+  .profile-links {
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translateY(30%);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+  }
+  
+  .profile-links a {
+    margin-top: 1em; 
+  }
+  
+  .profile-links img {
+      width: 2.5em;
+      height: auto;
+  }
+  
+  /* Contact form */
+  #contact {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+  .contact-form {
+      max-width: 600px auto;
+      max-height: 500px auto;
+      margin: 1em auto;
+      padding: 20px;
+      border-radius: 20px;
+      background-color: black;  
+  }
+  
+  .contact-form label {
+      display: block;
+      margin-bottom: auto;
+      background-color: black;
+      color: #FFFAF8;
+      
+  }
+  
+  .contact-form p,
+  .contact-form h2,
+  .contact-form submission{
+      width: 95%;
+      border: 0px solid #FFFAF8;
+      background-color: black;
+      color: #FFFAF8;
+    }
+  .contact-form p{
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+  
+  .submission {
+    margin-top: 2em;
+    font-color: black;
+    max-width: 10em;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+  .contact-form textarea,
+  .contact-form input{
+    border: 0px solid #FFFAF8;
+    
+  }
+  
+  .contact-form section {
+      width: 95%;
+      border: 0px solid #FFFAF8;
+      border-radius: 5px;
+      color: #FFFAF8;
+  }
+  
+  #contact img {
+      max-width: 400px;
+      max-height: 600px;
+      min-width: 300px;
+  }
+  
+  footer {
+      background-color: black;
+      padding: 0px 0;
+      text-align: center;
+    
+  }
+  
+  /* mobile display */
+  
+  @media (max-width: 767px) {
+      #home,
+      #about,
+      #contact {
+          flex-direction: column;
+          align-items: center;
+      }
+  
+  @media screen and (max-width: 700px) {
+      .grid-container {
+          grid-template-columns: repeat(2, 1fr);
+      }
